@@ -200,6 +200,8 @@ class SwiftyJotController: UIViewController {
 
         UIGraphicsEndImageContext()
         containerView.setNeedsDisplay()
+        
+        config.saved?(sourceImageView.image)
 
         if navigationController != nil {
             navigationController!.popViewController(animated: true)

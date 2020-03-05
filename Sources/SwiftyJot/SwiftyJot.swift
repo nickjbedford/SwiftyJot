@@ -2,7 +2,7 @@
 //  SwiftyJot.swift
 //  AnnotateImage
 //
-//  Created by David Lari on 11/23/17.
+//  Created by David Lari on 11/23/17.353158
 //  Copyright © 2017 David Lari. All rights reserved.
 //
 import UIKit
@@ -34,6 +34,7 @@ public class SwiftyJot {
         public var brushSize: CGFloat = 8
         public var showMenuButton = true
         public var showPaletteButton = true
+		public var saved: ((_ image: UIImage?) -> Void)? = nil
     }
 
     public var config = Config()
