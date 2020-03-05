@@ -34,7 +34,7 @@ public class SwiftyJot {
         public var brushSize: CGFloat = 8
         public var showMenuButton = true
         public var showPaletteButton = true
-		public var saved: ((_ image: UIImage?) -> ())? = nil
+		public var saved: ((UIImage?) -> Void)? = nil
     }
 
     public var config = Config()
